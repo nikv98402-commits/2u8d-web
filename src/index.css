@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --font-geologica: 'Geologica', sans-serif;
+  }
+
+  html {
+    /* Устанавливаем единый шрифт для всей страницы */
+    font-family: var(--font-geologica);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[#0a0a0a] text-white;
+    /* Убираем системные шрифты, оставляем только Geologica */
+    font-family: var(--font-geologica);
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Принудительно применяем шрифт ко всем заголовкам и кнопкам */
+  h1, h2, h3, h4, h5, h6, button, input, textarea {
+    font-family: var(--font-geologica);
+  }
+}
+
+@layer components {
+  .premium-text {
+    @apply tracking-tight leading-relaxed font-light;
+  }
+}
