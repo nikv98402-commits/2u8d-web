@@ -1,13 +1,12 @@
 export const teamMembers = [
   {
     id: 'pavlov-a',
-    // Исправлен путь: добавлен префикс /images/
     photo: '/images/team/pavlov_a.png', 
     nameRu: 'Павлов Андрей',
     nameEn: 'Andrey Pavlov',
     nameHe: 'אנדריי פבלוב',
-    roleRu: 'Founder & CEO',
-    roleEn: 'Founder & CEO',
+    roleRu: 'Основатель и генеральный директор',
+    roleEn: 'Founder & Chief Executive Officer',
     roleHe: 'מייסד ומנכ"ל',
     trackRecordRu: 'Опыт запуска и масштабирования бизнесов различного направления.',
     trackRecordEn: 'Experience in launching and scaling businesses in various industries.',
@@ -19,13 +18,12 @@ export const teamMembers = [
   },
   {
     id: 'pavlov-i',
-    // Исправлен путь
     photo: '/images/team/pavlov_i.png',
     nameRu: 'Павлов Иван',
     nameEn: 'Ivan Pavlov',
     nameHe: 'איוון פבלוב',
-    roleRu: 'Co-founder & CBD',
-    roleEn: 'Co-founder & CBD',
+    roleRu: 'Сооснователь и директор по развитию бизнеса',
+    roleEn: 'Co-founder & Chief Business Development Officer',
     roleHe: 'שותף מייסד וסמנכ"ל פיתוח עסקי',
     trackRecordRu: '15-летний опыт на рынках розничных продаж и недвижимости.',
     trackRecordEn: '15 years of experience in retail and real estate markets.',
@@ -37,14 +35,13 @@ export const teamMembers = [
   },
   {
     id: 'vlasov',
-    // Исправлен путь
     photo: '/images/team/vlasov.png',
     nameRu: 'Власов Никита',
     nameEn: 'Nikita Vlasov',
     nameHe: 'ניקיטה ולאסוב',
-    roleRu: 'CFO',
-    roleEn: 'CFO',
-    roleHe: 'סמנכ"ל כספים',
+    roleRu: 'Финансовый директор и директор по стратегии',
+    roleEn: 'Chief Financial and Strategy Officer',
+    roleHe: 'סמנכ"ל כספים ואסטרטגיה',
     trackRecordRu: 'Более 10 лет опыта в корпоративных финансах и инвестициях в крупнейших индустриальных компаниях.',
     trackRecordEn: 'Over 10 years of experience in corporate finance and investment in major industrial companies.',
     trackRecordHe: 'מעל 10 שנות ניסיון בכספים תאגידיים והשקעות בחברות תעשייתיות גדולות.',
@@ -55,14 +52,13 @@ export const teamMembers = [
   },
   {
     id: 'glebov',
-    // Исправлен путь согласно структуре
     photo: '/images/team/glebov.png', 
     nameRu: 'Глебов Олег',
     nameEn: 'Oleg Glebov',
     nameHe: 'אולג גלבוב',
-    roleRu: 'CTO',
-    roleEn: 'CTO',
-    roleHe: 'CTO',
+    roleRu: 'Технический директор',
+    roleEn: 'Chief Technology Officer',
+    roleHe: 'מנהל טכנולוגי ראשי',
     trackRecordRu: '15+ лет экспертизы в ИТ-секторе крупнейших компаний РФ.',
     trackRecordEn: '15+ years of IT expertise within major Russian corporations.',
     trackRecordHe: 'מעל 15 שנות מומחיות במגזר ה-IT בתאגידים הגדולים ברוסיה.',
@@ -73,12 +69,11 @@ export const teamMembers = [
   },
   {
     id: 'gasanova',
-    // Исправлен путь
     photo: '/images/team/gasanova.png',
     nameRu: 'Гасанова Айгюль',
     nameEn: 'Aigul Gasanova',
     nameHe: 'אייגול גסנובה',
-    roleRu: 'Project Lead',
+    roleRu: 'Руководитель проектов',
     roleEn: 'Project Lead',
     roleHe: 'מובילת פרויקטים',
     trackRecordRu: 'Обширный опыт реализации как внутренних операционных проектов, так и стратегических стримов.',

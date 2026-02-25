@@ -8,7 +8,6 @@ export function Team() {
   const isEn = currentLang.startsWith('en');
   const isHe = currentLang.startsWith('he');
 
-  // Универсальная функция получения локализованных строк
   const getMemberData = (member: any, field: string) => {
     if (isHe)
       return member[`${field}He`] || member[`${field}En`] || member[field];
@@ -35,7 +34,6 @@ export function Team() {
           </p>
         </div>
 
-        {/* Сетка адаптирована под 5+ участников (3 колонки на десктопе) */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-20">
           {teamMembers.map((member) => (
             <div key={member.id} className="group flex flex-col">
@@ -51,12 +49,14 @@ export function Team() {
                 <h3 className="text-2xl font-medium tracking-tight mb-1">
                   {getMemberData(member, 'name')}
                 </h3>
-                <p className="text-[#ff4d00] text-[10px] uppercase tracking-widest font-bold mb-4">
+                
+                {/* Оптимизация для длинных ролей */}
+                <p className="text-[#ff4d00] text-[9px] md:text-[10px] uppercase tracking-[0.12em] md:tracking-widest font-bold mb-4 leading-normal min-h-[2.4em] flex items-center">
                   {getMemberData(member, 'role')}
                 </p>
 
                 <div className="space-y-4">
-                  <p className="text-sm font-medium leading-relaxed italic opacity-80">
+                  <p className="text-sm font-medium leading-relaxed italic opacity-80 min-h-[3em]">
                     {getMemberData(member, 'trackRecord')}
                   </p>
                   <p className="text-xs text-black/60 font-light leading-relaxed group-hover:text-black transition-colors duration-500">
@@ -65,8 +65,6 @@ export function Team() {
                 </div>
 
                 <div className="flex flex-wrap gap-2 mt-6">
-                  {/* Traits теперь тоже могут быть локализованы через t() если добавить их в JSON, 
-                      либо отображаются как есть из массива */}
                   {(member.traits || []).map((trait: string) => (
                     <span
                       key={trait}
@@ -81,7 +79,7 @@ export function Team() {
           ))}
         </div>
 
-        {/* Финальный блок в стиле Ричарда Фейнмана */}
+        {/* Финальная цитата */}
         <div className="mt-32 pt-16 border-t border-black/5 text-start">
           <div className="max-w-4xl">
             <p className="text-xl md:text-2xl font-light leading-relaxed text-black/80 italic">
